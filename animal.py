@@ -1,4 +1,3 @@
-from zoo import zoo
 from food import food
 
 class animal:
@@ -6,14 +5,10 @@ class animal:
         self.name = name 
         self.species = species
         self.food = food    
-        zoo.add_animal(self)
-        
-    def eat(self):
-        zoo.feed_animal(self.food.get_type(), self.food.get_amount())
     
     def get_food(self):
         return self.food
     
-    
-        
+    def print_animal(self):    # operator overloading __str__ ?
+        pass
     
