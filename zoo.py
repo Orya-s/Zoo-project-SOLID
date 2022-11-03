@@ -6,7 +6,7 @@ class Zoo:
         self.animals = []
         self.food_supply = {}   # {"food_type":amount}
         self.restock_amount = {}    # {"food_type":amount}
-        self.restock_mul = 5
+        self.restock_mul = 14
         
     def add_animal(self, animal:Animal):
         self.animals.append(animal)
