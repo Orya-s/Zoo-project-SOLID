@@ -36,4 +36,4 @@ class zoo:
         self.food_supply[food_type] += self.restock_amount[food_type]
         
     def __str__(self):
-        return self.animals.__str__()
+        return "\n".join(a.__str__() for a in self.animals)
