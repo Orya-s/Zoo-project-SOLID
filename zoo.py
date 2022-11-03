@@ -22,7 +22,7 @@ class zoo:
             self.food_supply[food_type] = self.restock_amount[food_type]
             
     def feed_all(self):
-        [self.feed_animal(animal.get_food()) for animal in self.animals]    # in feed_animal- recievs food   # map ?
+        [self.feed_animal(animal.get_food()) for animal in self.animals]    
         
     def feed_animal(self, food:food):
         food_type = food.get_type()
@@ -35,5 +35,5 @@ class zoo:
         print("{} ran out, filling the supply...".format(food_type))
         self.food_supply[food_type] += self.restock_amount[food_type]
         
-    def print_zoo(self):    # operator overloading __str__ 
-        print(self.animals)
+    def __str__(self):
+        return self.animals.__str__()
