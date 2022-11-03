@@ -10,3 +10,5 @@ NUM_DAYS = 14
 
 for day in range(NUM_DAYS):
     zoo.feed_all()
+
+print(zoo)
