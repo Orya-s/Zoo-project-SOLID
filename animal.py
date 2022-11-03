@@ -9,6 +9,5 @@ class animal:
     def get_food(self):
         return self.food
     
-    def print_animal(self):    # operator overloading __str__ ?
-        pass
-    
+    def __repr__(self):
+        return "animal: \033[94m{}\033[0m - {}".format(self.name, self.species)
