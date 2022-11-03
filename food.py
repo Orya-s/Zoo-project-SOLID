@@ -1,4 +1,3 @@
-
 class food:
     def __init__(self, food_type, quantity, unit):
         self.food_type = food_type

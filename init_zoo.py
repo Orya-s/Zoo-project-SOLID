@@ -16,4 +16,3 @@ def init(zoo):
 
     animals = [Simba, Nala, Willy, Akka, Hedwig, Nemo, Marlin]
     zoo.add_animals(animals)
-    # zoo.print_zoo()
