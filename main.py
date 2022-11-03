@@ -1,8 +1,8 @@
-from zoo import zoo
+from zoo import Zoo
 from init_zoo import init
 
 # creating my zoo
-zoo = zoo()
+zoo = Zoo()
 init(zoo)
 
 # 2 weeks simulation:

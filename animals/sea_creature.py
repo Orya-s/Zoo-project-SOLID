@@ -1,8 +1,8 @@
-from animal import animal
+from animal import Animal
 
-class sea_creature(animal):
+class SeaCreature(Animal):
     def __init__(self, name, species, food, lowest_depth):  # lowest_depth in meters
-        animal.__init__(self, name, species, food)
+        Animal.__init__(self, name, species, food)
         self.lowest_depth = lowest_depth
         
     def __repr__(self):

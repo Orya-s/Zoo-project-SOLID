@@ -1,7 +1,7 @@
-from food import food
+from food import Food
 
-class animal:
-    def __init__(self, name, species, food:food):
+class Animal:
+    def __init__(self, name, species, food:Food):
         self.name = name 
         self.species = species
         self.food = food    

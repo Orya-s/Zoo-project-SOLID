@@ -1,6 +1,6 @@
-from food import food
-from animals.sea_creature import sea_creature
+from food import Food
+from animals.sea_creature import SeaCreature
 
-class clownfish(sea_creature):
-    def __init__(self, name, species="clownfish", food=food("algae", 3, "grams"), lowest_depth=15):
-        sea_creature.__init__(self, name, species, food, lowest_depth)
+class Clownfish(SeaCreature):
+    def __init__(self, name, species="clownfish", food=Food("algae", 3, "grams"), lowest_depth=15):
+        SeaCreature.__init__(self, name, species, food, lowest_depth)

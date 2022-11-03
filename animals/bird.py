@@ -1,8 +1,8 @@
-from animal import animal
+from animal import Animal
 
-class bird(animal):
+class Bird(Animal):
     def __init__(self, name, species, food, wing_span):   # wing_span in cm 
-        animal.__init__(self, name, species, food)
+        Animal.__init__(self, name, species, food)
         self.wing_span = wing_span
         
     def __repr__(self):

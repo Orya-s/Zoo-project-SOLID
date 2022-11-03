@@ -1,6 +1,6 @@
-from food import food
-from animals.mammal import mammal
+from food import Food
+from animals.mammal import Mammal
 
-class lion(mammal):
-    def __init__(self, name, species="lion", food=food("meat", 6, "kg"), preg_duration=4):
-        mammal.__init__(self, name, species, food, preg_duration)
+class Lion(Mammal):
+    def __init__(self, name, species="lion", food=Food("meat", 6, "kg"), preg_duration=4):
+        Mammal.__init__(self, name, species, food, preg_duration)

@@ -1,21 +1,21 @@
-from food import food
-from animal import animal
+from food import Food
+from animal import Animal
 
-class zoo:
+class Zoo:
     def __init__(self):
         self.animals = []
         self.food_supply = {}   # {"food_type":amount}
         self.restock_amount = {}    # {"food_type":amount}
         self.restock_mul = 5
         
-    def add_animal(self, animal:animal):
+    def add_animal(self, animal:Animal):
         self.animals.append(animal)
         self.add_food(animal.get_food())
         
     def add_animals(self, animals):
         [self.add_animal(a) for a in animals]
         
-    def add_food(self, food:food):
+    def add_food(self, food:Food):
         food_type = food.get_type()
         if food_type not in self.food_supply:
             self.restock_amount[food_type] = food.get_amount() * self.restock_mul
@@ -24,7 +24,7 @@ class zoo:
     def feed_all(self):
         [self.feed_animal(animal.get_food()) for animal in self.animals]    
         
-    def feed_animal(self, food:food):
+    def feed_animal(self, food:Food):
         food_type = food.get_type()
         amount = food.get_amount()
         if self.food_supply[food_type] - amount < 0:

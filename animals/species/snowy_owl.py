@@ -1,6 +1,6 @@
-from food import food
-from animals.bird import bird
+from food import Food
+from animals.bird import Bird
 
-class snowy_owl(bird):
-    def __init__(self, name, species="snowy owl", food=food("worms", 100, "grams"), wing_span=52):
-        bird.__init__(self, name, species, food, wing_span)
+class SnowyOwl(Bird):
+    def __init__(self, name, species="snowy owl", food=Food("worms", 100, "grams"), wing_span=52):
+        Bird.__init__(self, name, species, food, wing_span)
