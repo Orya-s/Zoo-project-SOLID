@@ -10,4 +10,4 @@ class Animal:
         return self.food
     
     def __repr__(self):
-        return "animal: \033[94m{}\033[0m - {}".format(self.name, self.species)
+        return "\033[94m{}\033[0m-{}".format(self.name, self.species)

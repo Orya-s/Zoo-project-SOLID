@@ -6,4 +6,4 @@ class Mammal(Animal):
         self.preg_duration = preg_duration
         
     def __repr__(self):
-        return "\033[94m{}\033[0m-{}: mammal, pregnancy duration = {} months".format(self.name, self.species, self.preg_duration)
+        return super().__repr__() + ": mammal, pregnancy duration = {} months".format(self.preg_duration)

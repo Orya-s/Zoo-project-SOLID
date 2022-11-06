@@ -6,4 +6,4 @@ class SeaCreature(Animal):
         self.lowest_depth = lowest_depth
         
     def __repr__(self):
-        return "\033[94m{}\033[0m-{}: sea_creature, lowest depth = {} meters".format(self.name, self.species, self.lowest_depth)
+        return super().__repr__() + ": sea_creature, lowest depth = {} meters".format( self.lowest_depth)

@@ -6,4 +6,4 @@ class Bird(Animal):
         self.wing_span = wing_span
         
     def __repr__(self):
-        return "\033[94m{}\033[0m-{}: bird, wing span = {} cm".format(self.name, self.species, self.wing_span)
+        return super().__repr__() + ": bird, wing span = {} cm".format(self.wing_span)
